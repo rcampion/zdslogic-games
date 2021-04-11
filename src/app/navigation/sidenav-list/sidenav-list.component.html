@@ -1,0 +1,156 @@
+<mat-nav-list>
+ 
+  <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+    <mat-icon>home</mat-icon>
+    <span class="nav-caption">Home</span>
+  </a>
+  
+  <a mat-list-item routerLink="/invaders" (click)="onSidenavClose()">
+    <mat-icon>play_arrow</mat-icon>
+    <span class="nav-caption">Space Invaders</span>
+  </a>
+<!-- 
+  <a mat-list-item routerLink="/about" (click)="onSidenavClose()">
+    <mat-icon>help</mat-icon>
+    <span class="nav-caption">About</span>
+  </a>
+
+  <mat-list-item [matMenuTriggerFor]="accountmenu">
+    <mat-icon>unfold_more</mat-icon>
+    <a matline>Account</a>
+  </mat-list-item>
+  <mat-menu #accountmenu="matMenu">
+    <button *ngIf="!isUserLoggedIn" mat-menu-item (click)="login()">
+      <mat-icon>login</mat-icon>Login
+    </button>
+    <button *ngIf="!isUserLoggedIn" mat-menu-item routerLink="/register" (click)="onSidenavClose()">
+      <mat-icon>add</mat-icon>Register
+    </button>
+    <button *ngIf="isUserLoggedIn" mat-menu-item (click)="logout()">
+      <mat-icon>logout</mat-icon>Logout
+    </button>
+    <button *ngIf="isUserLoggedIn" mat-menu-item routerLink="/settings" (click)="onSidenavClose()">
+      <mat-icon>settings</mat-icon>Settings
+    </button>
+
+    <button *appShowAuthed="true" mat-menu-item routerLink="/password" (click)="onSidenavClose()">Change Password</button>
+
+  </mat-menu>
+
+  <mat-list-item [matMenuTriggerFor]="appsmenu">
+    <mat-icon>unfold_more</mat-icon>
+    <a matline>Apps</a>
+  </mat-list-item>
+  <mat-menu #appsmenu="matMenu">
+    <button mat-menu-item routerLink="/external-articles" (click)="onSidenavClose()">
+      <mat-icon>article</mat-icon>Articles
+    </button>
+    <button mat-menu-item routerLink="/blog" (click)="onSidenavClose()">
+      <mat-icon>apps</mat-icon>Blog
+    </button>
+    <button mat-menu-item routerLink="/external-contacts" (click)="onSidenavClose()">
+      <mat-icon>contacts</mat-icon>Contacts
+    </button>
+    <button mat-menu-item routerLink="/live" (click)="onSidenavClose()">
+      <mat-icon>videocam</mat-icon>Live
+    </button>
+    <button mat-menu-item routerLink="/shop" (click)="onSidenavClose()">
+      <mat-icon>shopping_cart</mat-icon>Shop
+    </button>
+    <button mat-menu-item routerLink="/wiki" (click)="onSidenavClose()">
+      <mat-icon>apps</mat-icon>Wiki
+    </button>
+  </mat-menu>
+
+  <a mat-list-item routerLink="/articles" (click)="onSidenavClose()">
+    <mat-icon>article</mat-icon>
+    <span class="nav-caption">Articles</span>
+  </a>
+
+  <mat-list-item *ngIf="isUserLoggedIn" [matMenuTriggerFor]="contactsmenu">
+    <mat-icon>unfold_more</mat-icon>
+    <a matline>Contacts</a>
+  </mat-list-item>
+   <mat-menu #contactsmenu="matMenu">
+    <button *ngIf="isUserLoggedIn" mat-menu-item routerLink="/user-contacts" (click)="onSidenavClose()">
+      <mat-icon>assignment_ind</mat-icon>My Contacts
+    </button>
+    <button *ngIf="isUserLoggedIn" mat-menu-item routerLink="/contacts/contacts" (click)="onSidenavClose()">
+      <mat-icon>assignment_ind</mat-icon>All Contacts
+    </button>
+    <button *ngIf="isUserLoggedIn" mat-menu-item routerLink="/group/groups" (click)="onSidenavClose()">
+      <mat-icon>assignment_ind</mat-icon>Contact Groups
+    </button>
+  </mat-menu>
+
+  <a mat-list-item routerLink="/contact" (click)="onSidenavClose()">
+    <mat-icon>email</mat-icon>
+    <span class="nav-caption">EMail</span>
+  </a>
+
+  <a mat-list-item routerLink="/log/logs" (click)="onSidenavClose()">
+    <mat-icon>list</mat-icon>
+    <span class="nav-caption">Logs</span>
+  </a>
+
+  <mat-list-item *ngIf="isUserLoggedIn" [matMenuTriggerFor]="resumessmenu">
+    <mat-icon>unfold_more</mat-icon>
+    <a matline>Resumes</a>
+  </mat-list-item>
+   <mat-menu #resumessmenu="matMenu">
+    <button *ngIf="isUserLoggedIn" mat-menu-item routerLink="/resume-upload" (click)="onSidenavClose()">
+      <mat-icon>perm_media</mat-icon>Upload Resume
+    </button>
+    <button *ngIf="isUserLoggedIn" mat-menu-item routerLink="/resumes/resumes" (click)="onSidenavClose()">
+      <mat-icon>assignment_ind</mat-icon>All Resumes
+    </button>
+  </mat-menu>
+
+  <a mat-list-item routerLink="/slideshow" (click)="onSidenavClose()">
+    <mat-icon>perm_media</mat-icon>
+    <span class="nav-caption">Slideshow</span>
+  </a>
+  
+  <mat-list-item [matMenuTriggerFor]="menu">
+    <mat-icon>unfold_more</mat-icon>
+    <a matline>Visualizations</a>
+  </mat-list-item>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/logchart" (click)="onSidenavClose()">
+      <mat-icon>perm_media</mat-icon>Http Access Log Chart
+    </button>
+    <button mat-menu-item routerLink="/globe" (click)="onSidenavClose()">
+      <mat-icon>perm_media</mat-icon>Http Access Location Chart
+    </button>
+    <button mat-menu-item routerLink="/timeseries" (click)="onSidenavClose()">
+      <mat-icon>perm_media</mat-icon>TimeSeries
+    </button>
+    <button mat-menu-item routerLink="/linechart" (click)="onSidenavClose()">
+      <mat-icon>perm_media</mat-icon>SineWave
+    </button>
+    <button mat-menu-item routerLink="/disk" (click)="onSidenavClose()">
+      <mat-icon>perm_media</mat-icon>Disk Usage
+    </button>
+    <button mat-menu-item routerLink="/memory" (click)="onSidenavClose()">
+      <mat-icon>perm_media</mat-icon>Memory Usage
+    </button>
+    <button mat-menu-item routerLink="/cube" (click)="onSidenavClose()">
+      <mat-icon>perm_media</mat-icon>Cube
+    </button>
+    <button mat-menu-item routerLink="/background" (click)="onSidenavClose()">
+      <mat-icon>perm_media</mat-icon>Background
+    </button>
+  </mat-menu>
+
+  <a mat-list-item routerLink="/whois" (click)="onSidenavClose()">
+    <mat-icon>search</mat-icon>
+    <span class="nav-caption">WHOIS</span>
+  </a>
+  <a mat-list-item routerLink="/whoispricing" (click)="onSidenavClose()">
+    <mat-icon>attach_money</mat-icon>
+    <span class="nav-caption">WHOIS Pricing</span>
+  </a>
+
+-->
+
+</mat-nav-list>

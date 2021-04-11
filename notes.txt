@@ -1,0 +1,5 @@
+ng build --prod --base-href /games/
+
+ng build --base-href /games/
+
+For now copy the assets directory to the root of your web servers html directory.
