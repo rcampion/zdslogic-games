@@ -12,7 +12,7 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { FooterComponent } from './navigation/footer/footer.component';
 
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
-
+import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { InvadersComponent } from './invaders/invaders.component';
 
@@ -23,6 +23,7 @@ import { InvadersComponent } from './invaders/invaders.component';
     HeaderComponent,
     FooterComponent,
     SidenavListComponent,
+	AboutComponent,
 	HomeComponent,
     InvadersComponent
   ],
