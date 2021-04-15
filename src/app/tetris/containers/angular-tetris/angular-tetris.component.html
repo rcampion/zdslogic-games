@@ -1,0 +1,46 @@
+
+<table>
+	<tr>
+		<td>
+			<div class="react" [class.drop]='drop$ | async'>
+				<t-screen-decoration></t-screen-decoration>
+				<div class="screen">
+					<div class="panel">
+						<t-matrix></t-matrix>
+						<t-logo *ngIf="isShowLogo$ | async"></t-logo>
+						<div class="state">
+							<t-clock></t-clock>
+							<t-point></t-point>
+							<t-start-line></t-start-line>
+							<t-level></t-level>
+							<t-next></t-next>
+						</div>
+					</div>
+				</div>
+			</div>
+		</td>
+		<td style="padding: 0 15px 0 120px;">
+			<div>
+				<br> <br> <br>
+			</div>
+		</td>
+		<td>
+			<div>
+				<div class="last-row">
+					<t-sound></t-sound>
+					<t-pause></t-pause>
+
+				</div>
+				<div>
+					<t-keyboard [filling]="filling"
+						(onMouseDown)="keyboardMouseDown($event)"
+						(onMouseUp)="keyboardMouseUp($event)"> </t-keyboard>
+				</div>
+
+			</div>
+		</td>
+
+	</tr>
+</table>
+
+<t-github></t-github>

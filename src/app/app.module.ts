@@ -25,7 +25,8 @@ import { InvadersComponent } from './invaders/invaders.component';
     SidenavListComponent,
 	AboutComponent,
 	HomeComponent,
-    InvadersComponent
+    InvadersComponent,
+
   ],
   imports: [
     BrowserModule,

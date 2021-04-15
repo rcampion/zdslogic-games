@@ -6,13 +6,15 @@ import { HomeComponent } from '../home/home.component';
 
 import { InvadersComponent } from '../invaders/invaders.component';
 
-
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'home', component: HomeComponent },
-    { path: 'invaders', component: InvadersComponent },
-	
+    { path: 'invaders', component: InvadersComponent },	
+    {
+        path: 'tetris',
+        loadChildren: () => import("./../tetris/tetris.module").then(m => m.TetrisModule),
+    }
 ];
 
 @NgModule({

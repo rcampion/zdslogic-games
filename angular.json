@@ -1,8 +1,5 @@
 {
 	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-	"cli": {
-		"analytics": false
-	},
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
@@ -35,8 +32,8 @@
 							"src/assets/common/css/application.css",
 							"src/styles.scss",
 							"src/assets/css/main.css",
-							"src/assets/css/main-unminified.css"							
-					],
+							"src/assets/css/main-unminified.css"
+						],
 						"scripts": []
 					},
 					"configurations": {
@@ -132,5 +129,9 @@
 			}
 		}
 	},
-	"defaultProject": "zdslogic-games"
+	"defaultProject": "zdslogic-games",
+	"cli": {
+		"analytics": false,
+		"defaultCollection": "@datorama/akita"
+	}
 }

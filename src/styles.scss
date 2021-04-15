@@ -1,3 +1,8 @@
+@import '../src/app/tetris/styles/tetris.scss';
+
+t-keyboard, t-button {
+  touch-action: pan-x pan-y pinch-zoom;
+}
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
