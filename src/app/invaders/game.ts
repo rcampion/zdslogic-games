@@ -14,10 +14,10 @@ const config: Phaser.Types.Core.GameConfig = {
     parent: "SpaceInvaders"
 };
 
+// const game = new SpaceInvadersGame(config);
+
 export class SpaceInvadersGame extends Phaser.Game {
     constructor(config: Phaser.Types.Core.GameConfig) {
         super(config)
     }
 }
-
-// const game = new SpaceInvadersGame(config);

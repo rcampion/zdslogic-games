@@ -29,7 +29,7 @@
 		"@sentry/angular": "^6.2.5",
 		"@sentry/tracing": "^6.2.5",
 		"dat.gui": "^0.7.7",
-		"phaser": "^3.24.1",
+		"phaser": "^3.54.0",
 		"rxjs": "~6.6.0",
 		"tslib": "^2.0.0",
 		"webfontloader": "^1.6.28",
