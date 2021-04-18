@@ -1,0 +1,87 @@
+{
+  "preload": {
+    "files": [
+      {
+        "type": "tilemapTiledJSON",
+        "key": "levelMap",
+        "url": "./assets/tank/assets/maps/levelMap.json"
+      },
+      {
+        "type": "bitmapFont",
+        "key": "font",
+        "textureURL": "./assets/tank/assets/font/font.png",
+        "fontDataURL": "./assets/tank/assets/font/font.fnt"
+      },
+      {
+        "type": "image",
+        "key": "tankBlue",
+        "url": "./assets/tank/assets/sprites/tank-blue.png"
+      },
+      {
+        "type": "image",
+        "key": "tankRed",
+        "url": "./assets/tank/assets/sprites/tank-red.png"
+      },
+      {
+        "type": "image",
+        "key": "barrelBlue",
+        "url": "./assets/tank/assets/sprites/barrel-blue.png"
+      },
+      {
+        "type": "image",
+        "key": "barrelRed",
+        "url": "./assets/tank/assets/sprites/barrel-red.png"
+      },
+      {
+        "type": "image",
+        "key": "bulletBlue",
+        "url": "./assets/tank/assets/sprites/bullet-blue.png"
+      },
+      {
+        "type": "image",
+        "key": "bulletRed",
+        "url": "./assets/tank/assets/sprites/bullet-red.png"
+      },
+      {
+        "type": "image",
+        "key": "tiles",
+        "url": "./assets/tank/assets/tiles/tiles.png"
+      },
+      {
+        "type": "image",
+        "key": "barrelGreyTop",
+        "url": "./assets/tank/assets/obstacles/barrel-grey-top.png"
+      },
+      {
+        "type": "image",
+        "key": "barrelGreySideRust",
+        "url": "./assets/tank/assets/obstacles/barrel-grey-side-rust.png"
+      },
+      {
+        "type": "image",
+        "key": "barrelGreySide",
+        "url": "./assets/tank/assets/obstacles/barrel-grey-side.png"
+      },
+      {
+        "type": "image",
+        "key": "barrelRedTop",
+        "url": "./assets/tank/assets/obstacles/barrel-red-top.png"
+      },
+      {
+        "type": "image",
+        "key": "barrelRedSide",
+        "url": "./assets/tank/assets/obstacles/barrel-red-side.png"
+      },
+      {
+        "type": "image",
+        "key": "treeSmall",
+        "url": "./assets/tank/assets/obstacles/tree-small.png"
+      },
+      {
+        "type": "image",
+        "key": "treeLarge",
+        "url": "./assets/tank/assets/obstacles/tree-large.png"
+      }
+    ]
+  }
+}

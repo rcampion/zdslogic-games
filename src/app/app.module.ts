@@ -20,6 +20,14 @@ import { BirdyNamNamComponent } from './birdy-nam-nam/birdy-nam-nam.component';
 import { AsteroidComponent } from './asteroid/asteroid.component';
 import { AlphaAdjustComponent } from './alpha-adjust/alpha-adjust.component';
 import { BlockadeComponent } from './blockade/blockade.component';
+import { BlocksComponent } from './blocks/blocks.component';
+import { CandyCrushComponent } from './candy-crush/candy-crush.component';
+import { CoinRunnerComponent } from './coin-runner/coin-runner.component';
+import { FlappyBirdComponent } from './flappy-bird/flappy-bird.component';
+import { SnakeComponent } from './snake/snake.component';
+import { SpaceInvadersComponent } from './space-invaders/space-invaders.component';
+import { SuperMarioLandComponent } from './super-mario-land/super-mario-land.component';
+import { TankComponent } from './tank/tank.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +44,14 @@ import { BlockadeComponent } from './blockade/blockade.component';
     AsteroidComponent,
     AlphaAdjustComponent,
     BlockadeComponent,
+    BlocksComponent,
+    CandyCrushComponent,
+    CoinRunnerComponent,
+    FlappyBirdComponent,
+    SnakeComponent,
+    SpaceInvadersComponent,
+    SuperMarioLandComponent,
+    TankComponent,
 
   ],
   imports: [
