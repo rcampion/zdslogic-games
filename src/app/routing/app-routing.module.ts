@@ -29,16 +29,16 @@ const routes: Routes = [
     { path: 'coins', component: CoinRunnerComponent },
     { path: 'flappy', component: FlappyBirdComponent },
 	{ path: 'home', component: HomeComponent },
-    { path: 'invaders', component: InvadersComponent },	
+    { path: 'invaders', component: InvadersComponent },
+    { path: 'mario', component: SuperMarioLandComponent },		
+    { path: 'snake', component: SnakeComponent },	
+    { path: 'space', component: SpaceInvadersComponent },
+    { path: 'tank', component: TankComponent },	
     {
         path: 'tetris',
         loadChildren: () => import("./../tetris/tetris.module").then(m => m.TetrisModule),
     },
-    { path: 'snake', component: SnakeComponent },	
-    { path: 'space', component: SpaceInvadersComponent },	
-    { path: 'mario', component: SuperMarioLandComponent },	
-    { path: 'tank', component: TankComponent },	
-
+	
 ];
 
 @NgModule({

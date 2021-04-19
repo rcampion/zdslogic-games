@@ -8,7 +8,7 @@ export const GameConfig: Phaser.Types.Core.GameConfig = {
   version: '2.0',
   width: 1600,
   height: 1200,
-  zoom: 0.5,
+  zoom: 0.75,
   type: Phaser.AUTO,
   parent: 'game',
   scene: [BootScene, MenuScene, GameScene],
