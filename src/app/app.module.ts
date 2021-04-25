@@ -28,6 +28,8 @@ import { SnakeComponent } from './snake/snake.component';
 import { SpaceInvadersComponent } from './space-invaders/space-invaders.component';
 import { SuperMarioLandComponent } from './super-mario-land/super-mario-land.component';
 import { TankComponent } from './tank/tank.component';
+import { GameOfLifeComponent } from './game-of-life/game-of-life.component';
+import { BasicPlaybackAndEventsComponent } from './audio/web-audio/basic-playback-and-events/basic-playback-and-events.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { TankComponent } from './tank/tank.component';
     SpaceInvadersComponent,
     SuperMarioLandComponent,
     TankComponent,
+    GameOfLifeComponent,
+    BasicPlaybackAndEventsComponent,
 
   ],
   imports: [

@@ -3,14 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AboutComponent } from '../about/about.component';
 import { HomeComponent } from '../home/home.component';
+
 import { AlphaAdjustComponent } from '../alpha-adjust/alpha-adjust.component';
 import { AsteroidComponent } from '../asteroid/asteroid.component';
+import { BasicPlaybackAndEventsComponent } from '../audio/web-audio/basic-playback-and-events/basic-playback-and-events.component';
 import { BirdyNamNamComponent } from '../birdy-nam-nam/birdy-nam-nam.component';
 import { BlockadeComponent } from '../blockade/blockade.component';
 import { BlocksComponent } from '../blocks/blocks.component';
 import { CandyCrushComponent } from '../candy-crush/candy-crush.component';
 import { CoinRunnerComponent } from '../coin-runner/coin-runner.component';
 import { FlappyBirdComponent } from '../flappy-bird/flappy-bird.component';
+import { GameOfLifeComponent } from '../game-of-life/game-of-life.component';
 import { InvadersComponent } from '../invaders/invaders.component';
 import { SnakeComponent } from '../snake/snake.component';
 import { SpaceInvadersComponent } from '../space-invaders/space-invaders.component';
@@ -22,12 +25,14 @@ const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'alpha', component: AlphaAdjustComponent },
     { path: 'asteroid', component: AsteroidComponent },
+    { path: 'audio', component: BasicPlaybackAndEventsComponent },
     { path: 'birds', component: BirdyNamNamComponent },
     { path: 'blockade', component: BlockadeComponent },
     { path: 'blocks', component: BlocksComponent },
     { path: 'candy', component: CandyCrushComponent },
     { path: 'coins', component: CoinRunnerComponent },
     { path: 'flappy', component: FlappyBirdComponent },
+    { path: 'gol', component: GameOfLifeComponent },
 	{ path: 'home', component: HomeComponent },
     { path: 'invaders', component: InvadersComponent },
     { path: 'mario', component: SuperMarioLandComponent },		

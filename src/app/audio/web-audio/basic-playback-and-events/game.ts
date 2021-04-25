@@ -1,4 +1,5 @@
 import 'phaser';
+//import Phaser from 'phaser'
 
 import { GameConfig } from './config';
 
@@ -7,8 +8,5 @@ export class Game extends Phaser.Game {
     super(config);
   }
 }
-/*
-window.addEventListener('load', () => {
-  const game = new Game(GameConfig);
-});
-*/
+
+// export default new Phaser.Game(config)

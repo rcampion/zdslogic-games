@@ -1,16 +1,16 @@
 import Phaser from 'phaser'
 
 export class BirdyNamNam extends Phaser.Scene {
-	private loadImage!: Phaser.GameObjects.Image
-	//private track!: Phaser.Sound.WebAudioSound
+	private loadImage!: Phaser.GameObjects.Image;
+	private track!: Phaser.Sound.WebAudioSound;
 
-	private bird!: Phaser.GameObjects.Sprite
+	private bird!: Phaser.GameObjects.Sprite;
 
 	private egg = 0
 
-	private chick1!: Phaser.GameObjects.Sprite
-	private chick2!: Phaser.GameObjects.Sprite
-	private chick3!: Phaser.GameObjects.Sprite
+	private chick1!: Phaser.GameObjects.Sprite;
+	private chick2!: Phaser.GameObjects.Sprite;
+	private chick3!: Phaser.GameObjects.Sprite;
 
 	constructor() {
 		super('demo')
@@ -38,6 +38,7 @@ export class BirdyNamNam extends Phaser.Scene {
 		this.sound.pauseOnBlur = false
 
 		//this.track = this.sound.add('jungle') as Phaser.Sound.WebAudioSound
+		this.track = this.sound.add('jungle') as Phaser.Sound.WebAudioSound
 
 		this.anims.create({
 			key: 'lay',
@@ -46,7 +47,6 @@ export class BirdyNamNam extends Phaser.Scene {
 			delay: 1
 		})
 
-/*
 		if (this.sound.locked) {
 			this.loadImage.setTexture('click')
 
@@ -57,9 +57,9 @@ export class BirdyNamNam extends Phaser.Scene {
 		else {
 			this.startDemo()
 		}
-*/
-			this.loadImage.setTexture('click');
-			this.startDemo();
+
+//			this.loadImage.setTexture('click');
+//			this.startDemo();
 
 	}
 
