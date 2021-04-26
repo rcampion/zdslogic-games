@@ -27,7 +27,8 @@ export class BirdyNamNam extends Phaser.Scene {
 
 		this.loadImage = this.add.image(0, 0, 'loader').setOrigin(0)
 
-		this.load.audio('jungle', ['/assets/audio/jungle.ogg', '/assets/audio/jungle.mp3'])
+		//this.load.audio('jungle', ['/assets/audio/jungle.ogg', '/assets/audio/jungle.mp3'])
+		this.load.audio('jungle', '/assets/audio/jungle.mp3')
 		this.load.animation('birdyAnims', '/assets/demoscene/birdy.json')
 		this.load.image('bg1', '/assets/demoscene/birdy-nam-nam-bg1.png')
 		this.load.image('bg2', '/assets/demoscene/birdy-nam-nam-bg2.png')
@@ -71,7 +72,7 @@ export class BirdyNamNam extends Phaser.Scene {
 		this.bird = this.add.sprite(328, 152, 'birdy', 'lay0').setOrigin(0).setDepth(10)
 
 		this.bird.on('animationcomplete', this.dropEgg, this)
-/*
+
 		this.track.once('play', () => {
 			//this.bird.anims.delayedPlay(2250, 'lay')
 			this.bird.anims.playAfterDelay('lay', 2250)
@@ -79,7 +80,7 @@ export class BirdyNamNam extends Phaser.Scene {
 		})
 
 		this.track.play()
-*/
+
 	}
 
 	dropEgg() {

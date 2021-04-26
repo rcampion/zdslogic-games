@@ -1,5 +1,5 @@
-import 'phaser';
-//import Phaser from 'phaser'
+//import 'phaser';
+import Phaser from 'phaser'
 import createTests from './Tests'
 import WebFontFile from './WebFontFile'
 
@@ -16,10 +16,17 @@ export class BasicPlaybackAndEvents extends Phaser.Scene
 		this.load.image('prometheus','/assets/pics/Prometheus Brings Fire To Mankind.jpg')
 
 		this.load.audio('overture', [
-			'/assets/audio/Ludwig van Beethoven - The Creatures of Prometheus, Op. 43/Overture.ogg',
-			'/assets/audio/Ludwig van Beethoven - The Creatures of Prometheus, Op. 43/Overture.mp3'
+			'/assets/audio/Ludwig/Overture.ogg',
+			'/assets/audio/Ludwig/Overture.mp3'
 		], { instances: 2 })
 
+//		this.load.audio('overture', [
+//			'/assets/audio/Overture.mp3'
+//		], { instances: 1 })
+		
+		//this.load.audio('overture', '/assets/audio/Ludwig/Overture.mp3')
+		//this.load.audio('overture', "/assets/invaders/audio/shoot.wav");
+		
 		this.load.audioSprite('creatures','/assets/audio/Ludwig van Beethoven - The Creatures of Prometheus, Op. 43/sprites.json', [
 			'/assets/audio/Ludwig van Beethoven - The Creatures of Prometheus, Op. 43/sprites.ogg',
 			'/assets/audio/Ludwig van Beethoven - The Creatures of Prometheus, Op. 43/sprites.mp3'
