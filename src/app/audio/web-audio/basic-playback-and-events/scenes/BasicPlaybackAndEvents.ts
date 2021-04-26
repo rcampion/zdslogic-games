@@ -16,8 +16,8 @@ export class BasicPlaybackAndEvents extends Phaser.Scene
 		this.load.image('prometheus','/assets/pics/Prometheus Brings Fire To Mankind.jpg')
 
 		this.load.audio('overture', [
-			'/assets/audio/Ludwig/Overture.ogg',
-			'/assets/audio/Ludwig/Overture.mp3'
+			'/assets/audio/Ludwig van Beethoven - The Creatures of Prometheus, Op. 43/Overture.ogg',
+			'/assets/audio/Ludwig van Beethoven - The Creatures of Prometheus, Op. 43/Overture.mp3'
 		], { instances: 2 })
 
 //		this.load.audio('overture', [
